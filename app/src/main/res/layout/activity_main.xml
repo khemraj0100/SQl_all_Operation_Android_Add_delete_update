@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter the details below :- "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:background="@drawable/round_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTV" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/contactTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:padding="10dp"
+        android:background="@drawable/round_et"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dateET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/round_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactTV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newDataBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert New data"
+        android:background="@drawable/round_shape_bt"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateET" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update data"
+        android:background="@drawable/round_shape_bt"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newDataBT" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteDataBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_shape_bt"
+        android:text="delete Existing data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBT" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewDataBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view data"
+        android:background="@drawable/round_shape_bt"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteDataBT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
